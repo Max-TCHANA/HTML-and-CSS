@@ -1,0 +1,77 @@
+<!-- 
+
+As you start creating real pages with all of this awesome content on them, 
+you'll need to give browsers information about the pages themselves.
+
+This HTML page structure is not very "fun" to create because it has no visible content yet, but it is very necessary.
+
+First, define the document type, which is HTML. This should become a line of code you robotically type when you're creating new HTML, 
+and you don't need to think about it much beyond this.
+
+Start your HTML content with an opening <html> tag that includes a language attribute. This could be "en" for English, "fr" for French, "hi" for Hindi, or something else. 
+It helps screenreaders (a tool used people who have difficulty seeing) know which language to read out loud. 
+There are more than 8000 languages to choose from, but in your career, you'll probably use a few at most.
+
+Define and close the document's <head>.
+
+Define the document's body and fill it with the elements you've already learned about in this course 
+(sections, articles, headings, paragraphs, images, whatever's necessary for your page).
+
+Conclude your HTML content with a closing </html> tag.
+
+<head>
+Some common information is almost always included in a HTML file's head:
+
+page title
+
+links to your CSS files or page icon
+
+meta data that used for social sharing
+
+The total sum of all these elements could resemble this html code below.
+
+*******
+
+Although this all looks complicated, it's just a series of three tags: <title>, <link>, and <meta>. They have different attributes each time they're listed.
+
+<title>: define a site title using the <title> tag. Put your site's title between the opening and closing <title> tags.
+
+<link>: tell your HTML document where your CSS lives or where your site's icon lives by specifying an href attribute (pointing to the file location), 
+type (specifying the kind of document), and rel attribution (specifying its relationship to the HTML. These are standard lines of code you can almost copy and paste every time.
+
+<meta>: specify as many types of meta data as you need. <meta charset="utf-8"> is a good line of code to set in your HTML pages 
+so that your page can display any type of characters (English, Korean, etc), even if the page is mostly in one main language.
+
+
+
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+	
+		<!-- GENERAL INFO -->
+		<title>10 Fun Facts About Dogs</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Dogs are incredible creatures. There may still be some facts you don't know about them!">
+		
+		<!-- LINKS TO CSS FILE ("STYLESHEET") AND SITE ICON -->
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" >
+		
+		<!-- FACEBOOK METADATA -->
+		<meta property="og:image" content="https://dogsdogsdogs.com/images/dog.png">
+		<meta property="og:description" content="Dogs are incredible creatures. There may still be some facts you don't know about them!">
+		<meta property="og:title" content="10 Fun Facts About Dogs">
+		
+		<!-- TWITTER METADATA -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="10 Fun Facts About Dogs">
+		<meta name="twitter:description" content="Dogs are incredible creatures. There may still be some facts you don't know about them!">
+		<meta name="twitter:image" content="https://dogsdogsdogs.com/images/dog.png">
+    </head>
+    <body>
+	<h1>This is the body of the page</h1>
+	Look at the information provided on the tab related to this web page.
+    </body>
+</html>
