@@ -1,0 +1,56 @@
+Font sizing
+Several units of measurement are available to control font size in CSS:
+
+pixels
+em
+rem
+percentages
+
+The 3 different sets of CSS below all result in the same new font sizes:
+
+/* pixels */
+h1 {
+    font-size: 48px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* ems */
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.125em;
+}
+
+/* percentages */
+h1 {
+    font-size: 300%;
+}
+
+p {
+    font-size: 112.5%;
+}
+
+line-height
+In CSS, you control the vertical space between lines of text using the line-height property. 
+This can particularly help with the readability of long paragraphs.
+Example:
+#code-of-conduct {
+    line-height: 1.4em;
+}
+
+letter-spacing
+Increasing the space between letters is often useful when dealing with headings in all-caps.
+You should always give this value in the em or rem unit so it is proportional to the font the user has set in their browser.
+Example:
+h2 {
+    letter-spacing: 0.08em;
+}
+
+word-spacing
+You won't often need to increase the space between words, but it can be useful for poetic or literary effect. 
+You should always give this value in the em or rem unit so it is proportional to the font the user has set in their browser.

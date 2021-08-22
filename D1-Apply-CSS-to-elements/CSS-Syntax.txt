@@ -1,0 +1,53 @@
+CSS stands for "Cascading Style Sheets," 
+which means that the CSS you write "cascades" throughout your style file. 
+
+*****************************
+CSS syntax is given below:
+
+selector {
+  property: value;
+}
+*****************************
+
+selector: the HTML element you want to modify. It's called a "selector" because you're selecting the element. Fancy that!
+property: the element's CSS property you want to modify, like its color, spacing, etc.
+value: the new value of the CSS property, like "blue" for its color.
+
+Examples: 
+
+p {
+    color: white;
+    background-color: blue;
+    font-family: Arial;
+}
+
+You can also select elements based on class or id. To select an element using a class from its HTML, use a period. 
+The following code selects all elements with a class of "warning":
+
+.warning {
+    background-color: orange;
+}
+
+To select an element using an id from its HTML, use a pound sign. 
+The following code selects the element with an id of "intro":
+
+#intro {
+    color: blue;
+}
+
+NB: If the same element is affected by multiple appearance modifications, 
+the line of code farthest down the CSS page will take precedence.
+
+Example: In the following example, the relevant paragraph would be teal -- not indigo!
+p {
+    color: indigo;
+}
+
+p {
+    color: teal;
+}
+
+
+
+
+

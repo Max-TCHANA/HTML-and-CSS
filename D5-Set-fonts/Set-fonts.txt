@@ -1,0 +1,49 @@
+
+Fonts can make your site look unique and attractive. CSS offers you several ways to set fonts; 
+the way you ultimately do so will depend on your needs.
+
+The most common general font types you see online are:
+
+- sans-serif fonts
+- serif fonts
+- monospace fonts
+
+
+Installing your own fonts:
+
+Nearly an infinite number of fonts are available for download on various websites, such as:
+
+Font Squirrel: https://www.fontsquirrel.com/
+
+Google Fonts: https://fonts.google.com/
+
+Urban Fonts: https://www.urbanfonts.com/ 
+
+To include an installed font as part of your project, 
+you need to define a font-face rule (starting with an @ sign) 
+that defines the font family and the location of the downloaded font file:
+
+@font-face {
+    font-family: 'Milkshake';
+    src: url('fonts/milkshake.otf');
+}
+
+h1 {
+    font-family: Milkshake;
+}
+
+As you can see, our special font is called Milkshake. 
+We've saved the downloaded font in a file called "fonts" and told the CSS file to go find it there.
+
+Just make sure you're specifying multiple font families in case the user doesn't have the first font choice installed 
+on their computer, i.e.,
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+Check out this article that explains the difference between font file types like .eot, .otf, and more
+The Missing Guide to Font Formats: TTF, OTF, WOFF, EOT & SVG
+https://creativemarket.com/blog/the-missing-guide-to-font-formats
+
+

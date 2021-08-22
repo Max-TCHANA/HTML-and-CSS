@@ -1,0 +1,29 @@
+
+**********************
+https://htmlcolorcodes.com/color-picker/
+**********************
+
+We have the following ways to set color in CSS:
+
+Hex codes (A hex code is a 6-digit string of numbers and letters that represents the red, green, and blue values of a color in hexadecimal format.)
+RGB values (red, green, blue)
+Color names (There are 147 defined color names in CSS.)
+HSL values ( hue, saturation, and lightness)
+
+Examples:
+<h1 id="hex">Color via hex code: #1BDA76</h1>
+#hex {
+    color: #1BDA76;
+}
+
+#rgb {
+    color: rgb(27, 218, 118);
+}
+
+#color-name {
+    color: LightGreen;
+}
+
+#hsl {
+    color: hsl(149, 88%, 48%);
+}

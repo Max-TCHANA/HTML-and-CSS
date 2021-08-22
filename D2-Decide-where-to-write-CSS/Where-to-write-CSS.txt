@@ -1,0 +1,58 @@
+CSS can be written either:
+- outside your HTML file
+- inside your HTML file
+
+********************
+
+External CSS:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YOUR PAGE TITLE</title>
+        <link href=“css/style.css” type=“text/css” rel=“stylesheet” /> 
+    </head>
+    <body>
+        <h1>SOME HTML, WOOHOO</h1>
+    </body>
+</html>
+
+The <link> element in the HTML's <head> tells the page where to find its matching CSS. 
+It should have the following attributes:
+
+href: the file path to the CSS. 
+If you structure your project as shown in the image at the top of the chapter, this will be "css/style.css."
+
+type: describes the type of link, which will always be "text/css" for your stylesheets
+
+rel: describes the relationship between the pages, which will always be "stylesheet" for your stylesheets
+There is no closing tag necessary for the <link> element!
+
+********************
+
+Internal CSS:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internal CSS</title>
+        <style type=“text/css”>
+            h1 {
+                color: green;
+            } 
+        </style> 
+    </head>
+    <body>
+        <h1>SOME HTML, WOOHOO</h1>
+    </body>
+</html>
+
+A <style> tag within the HTML file's <head> defines the CSS for the page. 
+This is fine if you only have a couple lines of CSS. However, it can quickly become unwieldy. 
+It's not fun to read lines and lines of CSS in a file before the actual page content even starts!
+
+Inline CSS:
+You can even write CSS directly on elements in the HTML's body. In that case, you don't need to actually select them, 
+since it's clear (based on where you place the style tag) which element you want to change the appearance of using CSS:
+
+<h1 style="color: blue;">This will be a blue heading</h1>
+

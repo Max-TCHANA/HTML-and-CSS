@@ -1,0 +1,89 @@
+font-weight
+Adapting the weight of your font via CSS will cause your text to appear bolder or lighter than normal.
+Example:
+a {
+    font-weight: normal;
+}
+
+font-style
+We can't talk about bold text without talking about italics! To italicize text, you'll use the font-style property. 
+It can also be combined with a font-weight property if you like. The font-style property has two other possible values: 
+normal and oblique. Oblique text vaguely resembles italic text but takes up more horizontal space. You'll rarely use it.
+Example:
+a {
+    font-style: italic;
+    font-weight: 200;
+}
+
+text-decoration
+The <strong> HTML tag produces bold text by default, the <em> HTML tag produces italicized text by default, 
+but no HTML element produces underlined text by default.
+You must use CSS to accomplish this, no matter what. The text-decoration property will help you out.
+It can take multiple values:
+underline
+none
+line-through
+Example:
+a {
+    text-decoration: underline;
+}
+
+
+text-transform
+The text-transform property will most often take one of the following values:
+
+capitalize
+uppercase
+lowercase
+
+Example:
+a {
+    font-weight: 200;
+    font-family: Helvetica;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #151814;
+}
+
+Styles based on status
+CSS pseudo-classes
+
+some pseudo-classes that are commonly applied to links:
+
+:visited
+:hover
+:active
+
+You can find the full list of pseudo-classes here
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+
+
+:visited
+Web links are blue by default and purple when they've visited.
+Example:
+a:visited {
+    color: #858C7B;
+}
+
+:hover
+When a user hovers over elements like buttons or links, it can be helpful to have a visual change take place on the element. 
+Use the pseudo-class "hover" to apply this change to any element!
+Example:
+a:hover {
+    color: #151814;
+    background-color: #DFFFD6;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+:active
+When an element is clicked, it's nice to show a little visual effect to increase the sensation of interactivity. 
+A light visual effect can be pleasant when an element is clicked. In this case, 
+the clicked element is an "active" element only while the mouse button is pressing down on it.
+Example:
+a:active {
+    background-color: #F3FFE1;
+}
+
+CSS rule: if you're using them, you should specify pseudo-classes in a particular order. 
+That order is :visited, :hover, and then :active
